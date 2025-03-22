@@ -1,15 +1,15 @@
-#Task Manager
+# Task Manager
 
 A simple task management app built with Jetpack Compose, Kotlin, and Room Database. The app follows the Clean Architecture pattern along with MVVM and uses Hilt for dependency injection.
 
-🛠️ #Setup Instructions
+# 🛠️ Setup Instructions
 
-#1. Clone the Repository
+# 1. Clone the Repository
 First, clone the repository to your local machine:
 
 git clone https://github.com/hendraafatm/TaskManager.git
 
-#2. Install Dependencies
+# 2. Install Dependencies
 
 Make sure you have the required dependencies installed for the project to run. Follow the instructions below based on your environment:
 
@@ -20,7 +20,7 @@ Import the project by selecting File > Open and choosing the folder where you cl
 
 Android Studio should automatically sync Gradle. If it doesn't, click Sync Now in the toolbar.
 
-#Dependencies:
+# Dependencies:
 
 Kotlin version 2.0.0
 
@@ -36,7 +36,7 @@ For any additional dependencies, you can install them using Gradle:
 
 ./gradlew build
 
-🚀 #Running the Project
+# 🚀 Running the Project
 Once the dependencies are set up, follow the steps below to run the project on an Android emulator or a physical device:
 
 Connect your device via USB or use an emulator.
@@ -45,9 +45,9 @@ In Android Studio, click the Run button (green triangle) or select Run > Run 'ap
 
 The app will be installed on your device or emulator.
 
-🧑‍💻 #Design Rationale
+# 🧑‍💻 Design Rationale
 
-1. #Architecture
+# 1. Architecture
 This project follows the Clean Architecture pattern along with MVVM (Model-View-ViewModel). Clean Architecture helps separate the code into three main layers: data, domain, and presentation.
 
 Layers in Clean Architecture:
@@ -67,22 +67,22 @@ Testability: All layers can be tested independently, with the domain and data la
 
 Scalability: Adding new features or modules becomes easier without affecting other layers of the app.
 
-2. #Dependency Injection
+# 2. Dependency Injection
 
 We use Hilt for dependency injection to decouple the components and make them more modular and easier to test. By using @HiltAndroidApp and @Inject, we ensure dependencies are automatically provided throughout the app.
 
-3. #UI Design
+# 3. UI Design
 The UI is designed to be simple, intuitive, and user-friendly. We use Jetpack Compose to build the UI in a declarative way, which helps reduce boilerplate and improves code readability. Some key principles followed:
 
 Accessibility: The app is designed to be accessible, with proper contrast and font sizes.
 
 Responsiveness: The layout adjusts to different screen sizes and orientations.
 
-4. #Database Design
+# 4. Database Design
 The app uses Room Database for local data storage. This allows users to store tasks locally, even when offline. The schema was designed with scalability in mind, making it easier to extend the app with new features.
 
 
-#Database Schema
+# Database Schema
 Table: tasks
 The tasks table stores information about the tasks, including their title, description, priority, due date, and completion status.
 
