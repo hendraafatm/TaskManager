@@ -4,7 +4,7 @@ plugins {
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
     id("app.cash.paparazzi")
-
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
@@ -43,9 +43,7 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.6.10"
-    }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
